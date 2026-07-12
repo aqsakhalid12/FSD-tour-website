@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faisalabad Tour - Home</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CDN Icons for categories -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div class="container header-container">
+        <!-- Logo -->
+        <div class="logo">Faisalabad Tour</div>
+        <!-- Navbar -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li class="dropdown">
+              <a href="categories.html"
+                >Categories <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="parks.html">Parks</a></li>
+                <li><a href="malls.html">Malls</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="adventures.html">Adventure</a></li>
+              </ul>
+            </li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- Burger icon for mobile -->
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- BANNER START -->
+    <section class="banner">
+      <div class="banner-slides">
+        <div
+          class="slide"
+          style="background-image: url('images/banner-slides/slide-1.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('images/banner-slides/slide-2.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('images/banner-slides/slide-3.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('images/banner-slides/slide-4.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('images/banner-slides/slide-5.jpg')"
+        ></div>
+      </div>
+
+      <div class="banner-content">
+        <h1>Explore Faisalabad Like Never Before</h1>
+        <p>
+          Discover top destinations, enjoy deals, and book your tickets easily.
+        </p>
+
+        <!-- SEARCH FORM START -->
+        <form class="search-bar" action="places.html" method="get">
+          <input
+            type="text"
+            name="query"
+            placeholder="Search places or categories..."
+            required
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- SEARCH FORM END -->
+      </div>
+    </section>
+    <!-- BANNER END -->
+
+    <!-- FEATURE CARDS START -->
+    <section class="features">
+      <div class="container features-container">
+        <div class="feature-card">
+          <i class="fa fa-bolt"></i>
+          <h3>Fast Booking</h3>
+          <p>Book your tickets quickly without any hassle.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa fa-shield-alt"></i>
+          <h3>Best Guarantee</h3>
+          <p>Enjoy safe and reliable travel experiences.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa fa-star"></i>
+          <h3>Top Destinations</h3>
+          <p>Explore the most popular attractions in Faisalabad.</p>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURE CARDS END -->
+
+    <!-- TOP DESTINATIONS START -->
+    <section class="top-destinations">
+      <div class="container section-container">
+        <h2>Top Destinations</h2>
+        <div class="destinations-grid">
+          <div class="destination-card">
+            <img src="images/top-destination-1.jpg" alt="" />
+            <div class="destination-info">
+              <h3>Clock Tower</h3>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="images/top-destination-2.jpeg" alt="" />
+            <div class="destination-info">
+              <h3>Lyallpur Museum</h3>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="images/top-destination-3.webp" alt="" />
+            <div class="destination-info">
+              <h3>Gatwala Park</h3>
+            </div>
+          </div>
+        </div>
+        <a href="places.html" class="see-all-link">See All Places</a>
+      </div>
+    </section>
+    <!-- TOP DESTINATIONS END -->
+
+    <!-- EXPLORE BY CATEGORY START -->
+    <section class="explore-category">
+      <div class="container section-container">
+        <h2>Explore by Category</h2>
+        <a href="categories.html" class="see-all-link">See All Categories</a>
+        <div class="category-grid">
+          <div class="category-card">
+            <i class="fa fa-tree"></i>
+            <h3>Parks</h3>
+            <p>Relax and enjoy natural beauty in various parks.</p>
+          </div>
+          <div class="category-card">
+            <i class="fa fa-shopping-bag"></i>
+            <h3>Malls</h3>
+            <p>Experience shopping at Faisalabad's top malls.</p>
+          </div>
+          <div class="category-card">
+            <i class="fa fa-utensils"></i>
+            <h3>Food</h3>
+            <p>Taste delicious dishes at local restaurants.</p>
+          </div>
+          <div class="category-card">
+            <i class="fa fa-hotel"></i>
+            <h3>Hotels</h3>
+            <p>Stay at the best hotels in Faisalabad city.</p>
+          </div>
+          <div class="category-card">
+            <i class="fa fa-landmark"></i>
+            <h3>Adventures</h3>
+            <p>Explore cultural heritage at Adventures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EXPLORE BY CATEGORY END -->
+
+    <!-- FEATURED DEALS START -->
+    <section class="featured-deals">
+      <div class="container section-container">
+        <h2>Featured Deals</h2>
+        <div class="deals-grid">
+          <div class="deal-card">
+            <img src="images/deal-1.jpg" alt="" />
+            <h3>Best Western</h3>
+            <p>Get 20% off on weekend bookings.</p>
+            <a href="tickets.html" class="btn">Get Offer</a>
+          </div>
+          <div class="deal-card">
+            <img src="images/deal-2.jpg" alt="" />
+            <h3>Gloria Jeans</h3>
+            <p>Discounted coffee deals for visitors.</p>
+            <a href="tickets.html" class="btn">Get Offer</a>
+          </div>
+          <div class="deal-card">
+            <img src="images/deal-3.jpg" alt="" />
+            <h3>Gumti Water Foundation</h3>
+            <p>Exciting seasonal water activities for all.</p>
+            <a href="tickets.html" class="btn">Get Offer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURED DEALS END -->
+
+    <!-- BOOK TICKET START -->
+    <section class="book-ticket">
+      <div class="container section-container ticket-container">
+        <div class="ticket-image">
+          <img src="images/book-ticket.jpg" alt="" />
+        </div>
+        <div class="ticket-form">
+          <h2>Book Your Ticket</h2>
+          <form>
+            <input type="text" placeholder="Place/Category" required />
+            <input type="email" placeholder="Members" required />
+            <input type="text" placeholder="Email Address" required />
+            <input type="date" placeholder="Date" required />
+            <button type="submit">Book Ticket</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US START -->
+
+    <section class="about">
+      <!-- <h2 class="about-title">About <span>Us</span></h2> -->
+      <h2>About us</h2>
+
+      <div class="about-container">
+        <!-- Left Video Box -->
+        <div class="about-video">
+          <video autoplay muted loop>
+            <source src="Images/video.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+
+          <!-- <div class="img-text">Best Flowers Sellers</div> -->
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <h3 style="margin-bottom: 1.7rem; font-size: 25px">
+            About Faisalabad
+          </h3>
+
+          <p>
+            Faisalabad is a vibrant industrial and cultural city of Pakistan,
+            known for its rich history, lively markets, iconic landmarks, and a
+            perfect blend of modern life and tradition.
+            <b>Faisalabad Tour</b> is created to guide visitors through the
+            city’s top attractions, parks, food spots, hotels, and entertainment
+            places, while the <b>drone view video</b> showcases Faisalabad’s
+            beautiful skyline and city life, giving visitors a visual experience
+            before planning their visit
+          </p>
+          <br />
+
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US END -->
+
+    <!-- REVIEWS START -->
+    <section class="reviews">
+      <div class="container section-container">
+        <h2>Client Reviews</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <img src="images/client-ali.avif" alt="" />
+            <h3>Ali Khan</h3>
+            <p>Amazing experience! Booking was fast and smooth.</p>
+          </div>
+          <div class="review-card">
+            <img src="images/client-sara.avif" alt="" />
+            <h3>Sarah Ahmed</h3>
+            <p>Great destinations and wonderful deals!</p>
+          </div>
+          <div class="review-card">
+            <img src="images/client-omar.avif" alt="" />
+            <h3>Omar Farooq</h3>
+            <p>Highly recommended for tourists visiting Faisalabad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REVIEWS END -->
+
+    <!-- CONTACT US START -->
+
+    <section class="contact">
+      <div class="contact-container">
+        <!-- Left: Contact Form -->
+        <div class="contact-left">
+          <small>GET IN TOUCH</small>
+          <h2>Contact Us Today</h2>
+
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <!-- <input type="text" placeholder="Subject" /> -->
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn contact-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right: Map -->
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps?q=Faisalabad,Pakistan&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container footer-container">
+        <p>&copy; 2025 Faisalabad Tour. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
+</html>

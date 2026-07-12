@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faisalabad Tour - Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">Faisalabad Tour</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li class="dropdown">
+              <a href="categories.html"
+                >Categories <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="parks.html">Parks</a></li>
+                <li><a href="malls.html">Malls</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+              </ul>
+            </li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CONTACT FORM SECTION START -->
+    <section class="contact-us-section">
+      <div class="container section-container">
+        <div class="contact-us-center">
+          <form class="contact-form">
+            <h1>Contact Us</h1>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT FORM SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container footer-container">
+        <p>&copy; 2025 Faisalabad Tour. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JS Script Start -->
+    <script>
+      // Sab forms select kar liye
+      const forms = document.querySelectorAll("form");
+
+      forms.forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // form submit hone se page reload na ho
+          alert("Thank you! Your submission has been received."); // pop-up message
+          form.reset(); // form fields clear kar de
+        });
+      });
+    </script>
+    <!-- JS Script End -->
+  </body>
+</html>
