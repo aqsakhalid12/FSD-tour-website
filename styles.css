@@ -42,6 +42,10 @@ header {
 }
 
 /* NAVBAR START */
+nav {
+  position: relative;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -102,12 +106,28 @@ header {
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+  z-index: 1001;
+  padding: 5px;
 }
 
 .burger div {
   width: 25px;
   height: 3px;
   background: #ff5f1f;
+  transition: 0.3s;
+}
+
+/* Burger X animation when active */
+.burger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /*  BANNER START */
@@ -586,6 +606,23 @@ header {
 
 /* RESPONSIVE */
 
+@media (max-width: 1024px) {
+  .features-container,
+  .destinations-grid,
+  .deals-grid,
+  .reviews-grid {
+    flex-direction: column;
+  }
+}
+
+/* Tablet / small landscape phone - 2 columns */
+@media (max-width: 768px) and (min-width: 481px) {
+  .category-grid,
+  .places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -620,32 +657,55 @@ footer {
   .header-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 100%;
+    left: 0;
     right: 0;
     background: #fff;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+    max-height: 80vh;
+    opacity: 1;
   }
 
   .nav-links li {
+    width: 100%;
     text-align: center;
   }
 
   .nav-links li a {
     padding: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links li a:hover {
+    background: #f8f9fa;
+  }
+
+  .nav-links li a:hover::after {
+    width: 0%;
   }
 
   .burger {
-    display: flex;
-  }
-
-  .nav-links.active {
     display: flex;
   }
 
@@ -658,9 +718,60 @@ footer {
   }
 
   .ticket-container,
-  .about-us,
-  .contact-us {
+  .about-container,
+  .contact-container {
     flex-direction: column;
+  }
+
+  /* Homepage card grids - single column on mobile */
+  .features-container {
+    flex-direction: column;
+  }
+
+  .destinations-grid {
+    flex-direction: column;
+  }
+
+  .deals-grid {
+    flex-direction: column;
+  }
+
+  .reviews-grid {
+    flex-direction: column;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card image sizing on mobile */
+  .destination-card img {
+    height: 200px;
+  }
+
+  .deal-card img {
+    height: 200px;
+  }
+
+  .category-card img {
+    height: 200px;
+  }
+
+  .place-card img {
+    height: 200px;
+  }
+
+  .review-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .banner {
+    margin-top: 70px;
   }
 }
 
